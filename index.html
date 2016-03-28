@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RAP WARS | OASIS’16, OF GODS AND MEN</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="RAP WARS is the only nationwide freestyle rap battling competition. An audience of more than 1000 people provides a brilliant platform for young rappers to showcase their abilities and develop a greater fan following." />
+    <script type="application/x-javascript">
+    addEventListener("load", function() {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+    </script>
+    <!--backgroundVideo | fullpage.js-->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <style>
+    /* Style for our header texts
+	* --------------------------------------- */
+    
+    h1 {
+        font-size: 5em;
+        font-family: arial, helvetica;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    /* Centered texts in each section
+	* --------------------------------------- */
+    
+    .section {
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    #myVideo {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+        background-color: black;
+        /* in case the video doesn't fit the whole page*/
+        background-image: /* our video */
+        ;
+        background-position: center center;
+        background-size: contain;
+        object-fit: cover;
+        /*cover video background */
+        z-index: 3;
+    }
+    /* Layer with position absolute in order to have it over the video
+	* --------------------------------------- */
+    
+    #section0 .layer {
+        position: absolute;
+        z-index: 4;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    /*solves problem with overflowing video in Mac with Chrome */
+    
+    #section0 {
+        overflow: hidden;
+    }
+    /* Defining each section background and styles
+	* --------------------------------------- */
+    
+    #section1 {
+        background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+        background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+        background: linear-gradient(#4BBFC3, #7BAABE);
+    }
+    
+    #section2 {
+        background: -webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#636F8F));
+        background: -webkit-linear-gradient(#969AC6, #636F8F);
+        background: linear-gradient(#969AC6, #636F8F);
+    }
+    
+    #section3 {
+        background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#969ac6));
+        background: -webkit-linear-gradient(#7BAABE, #969AC6);
+        background: linear-gradient(#7BAABE, #969AC6);
+    }
+    
+    #section4 {
+        background: -webkit-gradient(linear, top left, bottom left, from(#92a1ca), to(#76c2bd));
+        background: -webkit-linear-gradient(#92a1ca, #76c2bd);
+        background: linear-gradient(#92a1ca, #76c2bd);
+    }
+    /* Bottom menu
+	* --------------------------------------- */
+    
+    #infoMenu li a {
+        color: #fff;
+    }
+    </style>
+    <!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/examples.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            verticalCentered: true,
+            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+            afterRender: function() {
+
+
+                //playing the video
+                $('video').get(0).play();
+            },
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+            autoScrolling: false,
+            fitToSection: false
+        });
+    });
+    </script>
+    <style>
+    /* Style overwrite
+	* --------------------------------------- */
+    
+    .header {
+        background: none !important;
+    }
+    
+    .header-main {
+        background: none !important;
+        min-height: 80px !important;
+        height: 80px;
+    }
+    
+    .header-secondary {
+        position: absolute;
+        top: 40vh;
+        left: auto;
+        right: auto;
+    }
+    
+    .header-secondary h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2.5em;
+        color: #FFF !important;
+    }
+    
+    .logo {
+        margin-top: 10px !important;
+    }
+    
+    .content-middle {
+        background: none no-repeat bottom;
+    }
+    /* dj_rocks
+	* --------------------------------------- */
+    
+    .footer {
+        padding-top: 5em;
+        position: relative;
+    }
+    
+    .copywrite {
+        float: left;
+    }
+    
+    .footer p {
+        color: #fff;
+        margin-bottom: 0.5em;
+        font-size: 2em;
+        padding-top: 5px;
+    }
+    
+    .footer p a {
+        color: #fff;
+    }
+    
+    .social-icons {
+        float: right;
+    }
+    
+    @media (max-width: 768px) {
+        .footer {
+            padding-top: 4em;
+        }
+        .footer p {
+            font-size: 0.85em;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .footer {
+            padding-top: 5em;
+            text-align: center;
+        }
+        .copywrite {
+            float: none;
+            padding: 0.5em 0 1em 0;
+        }
+        .social-icons {
+            float: none;
+        }
+    }
+    
+    @media (max-width: 414px) {
+        .footer {
+            padding-top: 3em;
+        }
+    }
+    /* elvis-web
+	* --------------------------------------- */
+    
+    .our-partners {
+        padding: 3em 0;
+        text-align: center;
+        background-color: #fff;
+    }
+    
+    .our-partners h3 {
+        font-family: 'Roboto Condensed';
+        font-weight: 700;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    
+    .top-music {
+        padding: 3em 0;
+        background-color: #020202;
+    }
+    
+    .musi-top {
+        text-align: center;
+    }
+    
+    .musi-top-grid {
+        text-align: center;
+    }
+    
+    .musi-top h3 {
+        font-family: 'Roboto Condensed';
+        font-weight: 700;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        color: #DB0080;
+        text-align: center;
+    }
+    
+    p.hide-text {
+        display: none;
+    }
+    
+    .musi-top-grid h2 {
+        margin: 15px 0;
+        font-size: 20px;
+        color: #DB0080;
+        font-family: bangers;
+    }
+    
+    .musi-top-grid p {
+        color: #fff;
+        font-family: 'Roboto Condensed';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.8em;
+    }
+    
+    .features-block {
+        padding: 3em 0;
+        text-align: center;
+        background: #FFE103;
+    }
+    
+    .features-block h3 {
+        font-family: 'Roboto Condensed';
+        font-weight: 700;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        color: #020202;
+    }
+    
+    h2.featurette-heading {
+        font-family: bangers;
+        color: #DB0080;
+    }
+    
+    .txt-sty1 {
+        text-align: left;
+    }
+    
+    .txt-sty2 {
+        text-align: right;
+    }
+    
+    .txt-sty3 {
+        text-align: left;
+    }
+    
+    p.lead {
+        font-family: 'Roboto Condensed';
+    }
+    
+    img.img-wid {
+        width: 100%;
+    }
+    
+    @media screen and (max-width:768px) {
+        .our-partners h3 {
+            a font-size: 30px;
+        }
+    }
+    
+    @media screen and (max-width: 320px) {
+        .our-partners {
+            padding: 2em 0;
+        }
+        .our-partners h3 {
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
+    }
+    /* music_life-web
+	* --------------------------------------- */
+    
+    .port-grid {
+        padding: 0px;
+        width: 20%;
+        float: left;
+    }
+    
+    .portfolio-wrapper img {
+        width: 100%;
+    }
+    
+    #portfoliolist .portfolio {
+        display: none;
+        margin-top: -3px;
+        width: 100%;
+    }
+    
+    .portfolio-wrapper {
+        position: relative;
+    }
+    
+    .simple-in {
+        display: none;
+        position: absolute;
+        top: 0;
+        background: rgba(24, 210, 126, 0.44);
+        width: 100%;
+        border: 5px solid #BBE42A;
+        height: 100%;
+    }
+    
+    .portfolio-wrapper:hover .simple-in {
+        display: block;
+    }
+    
+    .b-link-stripe {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        font-weight: 300;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .b-link-stripe .b-wrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        color: #fff;
+        overflow: hidden;
+    }
+    
+    .b-link-stripe .b-line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 20%;
+        background: rgba(187, 228, 42, 0.6);
+        transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        -webkit-transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .b-link-stripe:hover .b-line {
+        visibility: visible;
+    }
+    
+    .b-link-stripe .b-line1 {
+        left: 0;
+    }
+    
+    .b-link-stripe .b-line2 {
+        left: 20%;
+        transition-delay: 0.1s !important;
+        -moz-transition-delay: 0.1s !important;
+        -ms-transition-delay: 0.1s !important;
+        -o-transition-delay: 0.1s !important;
+        -webkit-transition-delay: 0.1s !important;
+    }
+    
+    .b-link-stripe .b-line3 {
+        left: 40%;
+        transition-delay: 0.2s !important;
+        -moz-transition-delay: 0.2s !important;
+        -ms-transition-delay: 0.2s !important;
+        -o-transition-delay: 0.2s !important;
+        -webkit-transition-delay: 0.2s !important;
+    }
+    
+    .b-link-stripe .b-line4 {
+        left: 60%;
+        transition-delay: 0.3s !important;
+        -moz-transition-delay: 0.3s !important;
+        -ms-transition-delay: 0.3s !important;
+        -o-transition-delay: 0.3s !important;
+        -webkit-transition-delay: 0.3s !important;
+    }
+    
+    .b-link-stripe .b-line5 {
+        left: 80%;
+        transition-delay: 0.4s !important;
+        -moz-transition-delay: 0.4s !important;
+        -ms-transition-delay: 0.4s !important;
+        -o-transition-delay: 0.4s !important;
+        -webkit-transition-delay: 0.4s !important;
+    }
+    
+    .b-link-stripe:hover .b-line {
+        opacity: 1;
+    }
+    
+    .b-animate-go {
+        text-decoration: none;
+    }
+    
+    .b-animate {
+        transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        visibility: hidden;
+        font-size: 1.1em;
+        font-weight: 700;
+    }
+    
+    .b-animate-go:hover .b-animate {
+        visibility: visible;
+    }
+    
+    .b-from-left {
+        position: relative;
+        left: -100%;
+        background: rgba(187, 228, 42, 0.05);
+        background-size: 100%;
+        margin: 0;
+        height: 100%;
+    }
+    
+    .b-animate-go:hover .b-from-left {
+        left: 0;
+    }
+    
+    .animate-head {
+        padding: 5em 0em;
+    }
+    
+    .animate-head-left {
+        text-align: center;
+    }
+    
+    .animate-head-left span {
+        font-size: 0.875em;
+        text-transform: lowercase;
+        font-weight: normal;
+        font-style: italic;
+        line-height: 1.3em;
+        margin-top: 0;
+    }
+    
+    .portfolio {
+        margin-top: 2px !important;
+        padding-right: 2px !important;
+    }
+    
+    .b-animate p {
+        font-size: 20px;
+        font-family: 'FjallaOne-Regular';
+        font-weight: 100;
+        bottom: 10px;
+        position: absolute;
+        left: 10px;
+    }
+    
+    .port-like {
+        font-size: 14px;
+        bottom: 10px;
+        position: absolute;
+        right: 10px;
+    }
+    
+    .port-heart {
+        font-size: 14px;
+        bottom: 10px;
+        position: absolute;
+        right: 52px;
+    }
+    
+    .port-like span {
+        color: #fff;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    
+    .port-heart span {
+        color: #fff;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    </style>
+    <!-- music_life-web -->
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/hover_pack.js"></script>
+    <!-- //music_life-web -->
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <video autoplay loop muted id="myVideo">
+                <source src="videos/flowers.mp4" type="video/mp4">
+                <source src="videos/flowers.webm" type="video/webm">
+            </video>
+            <div class="layer">
+                <!--header-->
+                <div class="header header-main">
+                    <div class="container">
+                        <div class="header-top">
+                            <div class="logo">
+                                <h1><a href="index.html">RAP WARS</a></h1>
+                            </div>
+                            <div class="top-nav">
+                                <span class="menu"><img src="images/menu.png" alt=""> </span>
+                                <ul>
+                                    <li><a href="index.html" class="hvr-sweep-to-bottom">Home</a> </li>
+                                    <li><a href="album.html" class="hvr-sweep-to-bottom">Albums</a> </li>
+                                    <li><a href="blog.html" class="hvr-sweep-to-bottom">Blog</a></li>
+                                    <li><a href="typo.html" class="hvr-sweep-to-bottom">Elims</a></li>
+                                    <li><a href="register.html" class="hvr-sweep-to-bottom">Register</a></li>
+                                    <div class="clearfix"> </div>
+                                </ul>
+                                <!--script-->
+                                <script>
+                                $("span.menu").click(function() {
+                                    $(".top-nav ul").slideToggle(500, function() {});
+                                });
+                                </script>
+                            </div>
+                        </div>`
+                    </div>
+                </div>
+                <div class="header header-secondary">
+                    <h1><b>Register Now</b></h1>
+                    <br>
+                    <h2>for one of the largest Rap platforms in India.</h2>
+                </div>
+                <!--//header-->
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <!--content-->
+            <div class="content">
+                <div class="container">
+                    <!--content-top-->
+                    <div class="content-top">
+                        <div class="col-md-7 content-top1">
+                            <h3>Welcome</h3>
+                            <p>RAP WARS is the only nationwide freestyle rap battling competition previously featuring Smokey and Brodha V as judges and also include artists like Rob C and Cardoz Lester as the earlier winners. An audience of more than 1000 people provides a brilliant platform for young rappers to showcase their abilities and develop a greater fan following.</p>
+                        </div>
+                        <div class="col-md-5 top-col">
+                            <div class="col1">
+                                <div class="col-md-6 col2">
+                                    <img src="images/ic.png" alt="">
+                                </div>
+                                <div class="col-md-6 col3">
+                                    <img src="images/ic1.png" alt="">
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="col1">
+                                <div class="col-md-6 col4">
+                                    <img src="images/ic2.png" alt="">
+                                </div>
+                                <div class="col-md-6 col5">
+                                    <img src="images/ic3.png" alt="">
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <!--//content-top-->
+                    <!--content-mid-->
+                    <div class="content-mid">
+                        <div class="col-md-4 mid">
+                            <a href="single.html"><img src="images/1.jpg" alt="" class="img-responsive">
+                                <div class="mid1">
+                                    <h4>My Album</h4>
+                                    <i class="glyphicon glyphicon-circle-arrow-right"></i>
+                                    <div class="clearfix"> </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mid">
+                            <a href="single.html"><img src="images/2.jpg" alt="" class="img-responsive">
+                                <div class="mid1">
+                                    <h4>My Album</h4>
+                                    <i class="glyphicon glyphicon-circle-arrow-right"></i>
+                                    <div class="clearfix"> </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mid">
+                            <a href="single.html"><img src="images/4.jpg" alt="" class="img-responsive">
+                                <div class="mid1">
+                                    <h4>My Album</h4>
+                                    <i class="glyphicon glyphicon-circle-arrow-right"></i>
+                                    <div class="clearfix"> </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--content-mid-->
+                </div>
+            </div>
+            <!--//content-->
+        </div>
+        <div class="section" id="section2">
+            <div class="content-middle">
+                <div class="container">
+                    <div class="content-mid-top">
+                        <h3> Team</h3>
+                    </div>
+                    <div class="news">
+                        <div class="col-md-6 new-more">
+                            <div class=" new-more1">
+                                <div class="col-md-2 six">
+                                    <img class="img-responsive" src="images/te.jpg" alt="">
+                                </div>
+                                <div class="col-md-10 six1">
+                                    <h5>It is a long established fact that</h5>
+                                    <p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
+                                    <a href="single.html"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 new-more">
+                            <div class=" new-more1">
+                                <div class="col-md-2 six">
+                                    <img class="img-responsive" src="images/te1.jpg" alt="">
+                                </div>
+                                <div class="col-md-10 six1">
+                                    <h5>It is a long established fact that</h5>
+                                    <p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
+                                    <a href="single.html"><i class="glyphicon glyphicon-circle-arrow-right"></i></a> </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="news">
+                        <div class="col-md-6 new-more">
+                            <div class=" new-more1">
+                                <div class="col-md-2 six">
+                                    <img class="img-responsive" src="images/te3.jpg" alt="">
+                                </div>
+                                <div class="col-md-10 six1">
+                                    <h5>It is a long established fact that</h5>
+                                    <p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
+                                    <a href="single.html"><i class="glyphicon glyphicon-circle-arrow-right"></i></a> </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 new-more">
+                            <div class=" new-more1">
+                                <div class="col-md-2 six">
+                                    <img class="img-responsive" src="images/te2.jpg" alt="">
+                                </div>
+                                <div class="col-md-10 six1">
+                                    <h5>It is a long established fact that</h5>
+                                    <p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
+                                    <a href="single.html"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+        </div>
+        <div class="section" id="section3">
+            <!---->
+            <div class="banner-albums">
+                <div id="portfoliolist">
+                    <div class="port-grid">
+                        <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
+                                    <img class="img-responsive lot" src="images/b1.jpg" alt="">
+                                    <div class="b-wrapper">
+                                        <div class="b-animate b-from-left b-delay03 ">
+                                            <p class="plus">Rock</p>
+                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
+                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
+                                    <img class="img-responsive lot" src="images/b2.jpg" alt="">
+                                    <div class="b-wrapper">
+                                        <div class="b-animate b-from-left b-delay03 ">
+                                            <p class="plus">African</p>
+                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
+                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="port-grid">
+                        <div class="portfolio mov mix_all" data-cat="mov" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
+                                    <img class="img-responsive lot" src="images/b3.jpg" alt="">
+                                    <div class="b-wrapper">
+                                        <div class="b-animate b-from-left b-delay03 ">
+                                            <p class="plus">Hip Hop</p>
+                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
+                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
+                                    <img class="img-responsive lot" src="images/b6.jpg" alt="">
+                                    <div class="b-wrapper">
+                                        <div class="b-animate b-from-left b-delay03 ">
+                                            <p class="plus">Folk</p>
+                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
+                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="port-grid">
+                        <div class="portfolio mov mix_all" data-cat="mov" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
+                                    <img class="img-responsive lot" src="images/b5.jpg" alt="">
+                                    <div class="b-wrapper">
+                                        <div class="b-animate b-from-left b-delay03 ">
+                                            <p class="plus">Indie</p>
+                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
+                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio set mix_all" data-cat="set" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
+                                    <img class="img-responsive lot" src="images/b10.jpg" alt="">
+                                    <div class="b-wrapper">
+                                        <div class="b-animate b-from-left b-delay03 ">
+                                            <p class="plus">College</p>
+                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
+                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="port-grid">
+                        <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
+                                    <img class="img-responsive lot" src="images/b4.jpg" alt="">
+                                    <div class="b-wrapper">
+                                        <div class="b-animate b-from-left b-delay03 ">
+                                            <p class="plus">Punk</p>
+                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
+                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
+                                    <img class="img-responsive lot" src="images/b8.jpg" alt="">
+                                    <div class="b-wrapper">
+                                        <div class="b-animate b-from-left b-delay03 ">
+                                            <p class="plus">Art Punk</p>
+                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
+                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="port-grid">
+                        <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
+                                    <img class="img-responsive lot" src="images/b9.jpg" alt="">
+                                    <div class="b-wrapper">
+                                        <div class="b-animate b-from-left b-delay03 ">
+                                            <p class="plus">Jazz</p>
+                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
+                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
+                                    <img class="img-responsive lot" src="images/b7.jpg" alt="">
+                                    <div class="b-wrapper">
+                                        <div class="b-animate b-from-left b-delay03 ">
+                                            <p class="plus">Rock</p>
+                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
+                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!---->
+        </div>
+        <div class="section" id="section4">
+            <div class="content">
+                <!--our-partners-->
+                <div class="our-partners">
+                    <div class="container">
+                        <h3>Our past sponsors</h3>
+                        <div class="col-md-4 flot-stn2">
+                            <a href="#"><img src="./images/part2.jpg" alt="/" width="200px" /></a>
+                        </div>
+                        <div class="col-md-4 flot-stn2">
+                            <a href="#"><img src="./images/part3.png" alt="/" width="150px" /></a>
+                        </div>
+                        <div class="col-md-4 flot-stn2">
+                            <a href="#"><img src="./images/part4.png" alt="/" width="300px" /></a>
+                        </div>
+                        <div class="col-md-6 flot-stn2">
+                            <a href="#"><img src="./images/part5.png" alt="/" width="300px" /></a>
+                        </div>
+                        <div class="col-md-6 flot-stn2">
+                            <a href="#"><img src="./images/part1.png" alt="/" width="200px" /></a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <!--our-partners-->
+                <div class="top-music">
+                    <div class="container">
+                        <div class="row musi-top">
+                            <h3>Our past Judges, MCees and winners</h3>
+                            <div class="col-md-3 musi-top-grid">
+                                <img class="img-circle" src="images/ms5.jpg" alt="Generic placeholder image" width="140" height="140">
+                                <h2>Austin Mahone</h2>
+                                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+                            </div>
+                            <!-- /.col-lg-4 -->
+                            <div class="col-md-3 musi-top-grid">
+                                <img class="img-circle" src="images/ms1.jpg" alt="Generic placeholder image" width="140" height="140">
+                                <h2>Patrick Sheehy </h2>
+                                <p>Duis mollis Lorem Ipsum mentum nibh, ut fermentum massa justo sit.</p>
+                            </div>
+                            <!-- /.col-lg-4 -->
+                            <div class="col-md-3 musi-top-grid">
+                                <img class="img-circle" src="images/ms2.jpg" alt="Generic placeholder image" width="140" height="140">
+                                <h2>Travis Millis</h2>
+                                <p>Lorem Ipsum mentum nibh, ut fermentum massa justo sit amet risus.</p>
+                            </div>
+                            <!-- /.col-lg-4 -->
+                            <div class="col-md-3 musi-top-grid">
+                                <img class="img-circle" src="images/ms3.jpg" alt="Generic placeholder image" width="140" height="140">
+                                <h2>omen f.t </h2>
+                                <p>Lorem Ipsum mentum nibh, ut fermentum massa justo sit amet risus.</p>
+                            </div>
+                            <!-- /.col-lg-4 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                </div>
+                <!-- START THE FEATURETTES -->
+                <div class="features-block" id="events">
+                    <div class="container">
+                        <h3>Elims</h3>
+                        <div class="row featurette">
+                            <div class="col-md-7 txt-sty1 flot-stn3">
+                                <h2 class="featurette-heading">Delhi <span class="text-muted">It'll blow your mind.</span></h2>
+                                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                            </div>
+                            <div class="col-md-5 flot-stn3">
+                                <img class="featurette-image img-responsive center-block" src="images/ev2.jpg" alt="Generic placeholder image">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <hr class="featurette-divider">
+                        <div class="row featurette">
+                            <div class="col-md-7 col-md-push-5 txt-sty2 flot-stn4">
+                                <h2 class="featurette-heading">Pune <span class="text-muted">See for yourself.</span></h2>
+                                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                            </div>
+                            <div class="col-md-5 col-md-pull-7 flot-stn4">
+                                <img class="featurette-image img-responsive center-block" src="images/ev1.jpg" alt="Generic placeholder image">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <hr class="featurette-divider">
+                        <div class="row featurette">
+                            <div class="col-md-7 txt-sty3 flot-stn5">
+                                <h2 class="featurette-heading">Kolkata <span class="text-muted">Checkmate.</span></h2>
+                                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                            </div>
+                            <div class="col-md-5 flot-stn5">
+                                <img class="featurette-image img-responsive center-block" src="images/ev3.jpg" alt="Generic placeholder image">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <hr class="featurette-divider">
+                        <div class="row featurette">
+                            <div class="col-md-7 col-md-push-5 txt-sty2 flot-stn4">
+                                <h2 class="featurette-heading">Mumbai <span class="text-muted">See for yourself.</span></h2>
+                                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                            </div>
+                            <div class="col-md-5 col-md-pull-7 flot-stn4">
+                                <img class="featurette-image img-responsive center-block" src="images/ev1.jpg" alt="Generic placeholder image">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <hr class="featurette-divider">
+                        <div class="row featurette">
+                            <div class="col-md-7 txt-sty3 flot-stn5">
+                                <h2 class="featurette-heading">Bangalore <span class="text-muted">Checkmate.</span></h2>
+                                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                            </div>
+                            <div class="col-md-5 flot-stn5">
+                                <img class="featurette-image img-responsive center-block" src="images/ev3.jpg" alt="Generic placeholder image">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="container">
+                        <div class="copywrite">
+                            <p>E-mail Us at:
+                                <br><a href="mailto:rapwars.oasis@gmail.com" class="hover"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>rapwars.oasis@gmail.com</a></p>
+                        </div>
+                        <div class="social-icons">
+                            <a class="hover" href="https://www.facebook.com/bitspoetry/?fref=ts" title=""><img src="images/poetrylogo.png" alt=""></a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </div>
+</body>
+
+</html>
