@@ -3,7 +3,9 @@
 
 <head>
     <title>RAP WARS | OASIS’16, OF GODS AND MEN</title>
+    <link rel="icon" href="images/RapWars_logo.png">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Custom Theme files -->
@@ -35,6 +37,173 @@
         color: #fff;
         margin: 0;
         padding: 0;
+    }
+    
+    .hvr-highlight {
+        box-shadow: 0px 0px 20px #000;
+        filter: progid: DXImageTransform.Microsoft.Glow(Color=black, Strength=20);
+        /* glow effect on hover */
+        text-shadow: -1px 1px 20px #ffc, 1px -1px 20px #fff;
+        -webkit-transition: text-shadow 250ms linear 0s;
+        -moz-transition: text-shadow 250ms linear 0s;
+        -o-transition: text-shadow 250ms linear 0s;
+        transition: text-shadow 250ms linear 0s;
+    }
+    
+    .collection {
+        float: left;
+        clear: both;
+        position: relative;
+        width: 580px;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    
+    .collection:hover .card {
+        z-index: 1;
+        opacity: 1;
+        width: 120px;
+        height: 169px;
+    }
+    
+    .collection:hover .card:hover {
+        z-index: 10;
+        -webkit-transform: rotate(0deg);
+        width: 213px;
+        height: 300px;
+        top: -38px;
+        opacity: 1;
+    }
+    
+    .collection .card {
+        position: relative;
+        float: left;
+        width: 142px;
+        height: 200px;
+        -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+        -webkit-transition: all 0.3s ease-out;
+    }
+    
+    .collection .card:nth-child(1) {
+        -webkit-transform: rotate(-6deg);
+        top: 40px;
+        left: 9px;
+        z-index: 5;
+    }
+    
+    .collection .card:nth-child(2) {
+        -webkit-transform: rotate(-2deg);
+        left: -9px;
+        z-index: 3;
+    }
+    
+    .collection .card:nth-child(3) {
+        -webkit-transform: rotate(-5deg);
+        top: 26px;
+        left: -36px;
+        z-index: 1;
+    }
+    
+    .collection .card:nth-child(4) {
+        -webkit-transform: rotate(7deg);
+        top: 15px;
+        left: -46px;
+        z-index: 3;
+    }
+    
+    .wel_container {
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: none;
+        box-sizing: border-box;
+        background-image: radial-gradient(mintcream 0%, lightgray 100%);
+        margin: 4% auto;
+        width: 210px;
+        height: 140px;
+        position: relative;
+        perspective: 1000px;
+    }
+    
+    #carousel {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        animation: rotation 20s infinite linear;
+    }
+    
+    #carousel:hover {
+        animation-play-state: paused;
+    }
+    
+    #carousel figure {
+        display: block;
+        position: absolute;
+        width: 186px;
+        height: 116px;
+        left: 10px;
+        top: 10px;
+        background: black;
+        overflow: hidden;
+        border: solid 5px black;
+    }
+    
+    #carousel figure:nth-child(1) {
+        transform: rotateY(0deg) translateZ(288px);
+    }
+    
+    #carousel figure:nth-child(2) {
+        transform: rotateY(40deg) translateZ(288px);
+    }
+    
+    #carousel figure:nth-child(3) {
+        transform: rotateY(80deg) translateZ(288px);
+    }
+    
+    #carousel figure:nth-child(4) {
+        transform: rotateY(120deg) translateZ(288px);
+    }
+    
+    #carousel figure:nth-child(5) {
+        transform: rotateY(160deg) translateZ(288px);
+    }
+    
+    #carousel figure:nth-child(6) {
+        transform: rotateY(200deg) translateZ(288px);
+    }
+    
+    #carousel figure:nth-child(7) {
+        transform: rotateY(240deg) translateZ(288px);
+    }
+    
+    #carousel figure:nth-child(8) {
+        transform: rotateY(280deg) translateZ(288px);
+    }
+    
+    #carousel figure:nth-child(9) {
+        transform: rotateY(320deg) translateZ(288px);
+    }
+    
+    #carousel img {
+        -webkit-filter: grayscale(1);
+        cursor: pointer;
+        transition: all .5s ease;
+    }
+    
+    #carousel img:hover {
+        -webkit-filter: grayscale(0);
+        transform: scale(1.2, 1.2);
+    }
+    
+    @keyframes rotation {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
     }
     /* Centered texts in each section
     * --------------------------------------- */
@@ -100,9 +269,10 @@
     }
     
     #section4 {
-        background: -webkit-gradient(linear, top left, bottom left, from(#92a1ca), to(#76c2bd));
+        /*background: -webkit-gradient(linear, top left, bottom left, from(#92a1ca), to(#76c2bd));
         background: -webkit-linear-gradient(#92a1ca, #76c2bd);
-        background: linear-gradient(#92a1ca, #76c2bd);
+        background: linear-gradient(#92a1ca, #76c2bd);*/
+        background: #29C4CA;
     }
     /* Bottom menu
     * --------------------------------------- */
@@ -124,14 +294,11 @@
     $(document).ready(function() {
         $('#fullpage').fullpage({
             verticalCentered: true,
-            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
             afterRender: function() {
-
-
                 //playing the video
                 $('video').get(0).play();
             },
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage'],
+            anchors: ['Home', 'Venues', 'Hosts and Judges', 'Gallery', 'Sponsors, Contact Us'],
             autoScrolling: false,
             fitToSection: false
         });
@@ -532,11 +699,10 @@
                             <div class="top-nav">
                                 <span class="menu"><img src="images/menu.png" alt=""> </span>
                                 <ul>
-                                    <li><a href="index.html" class="hvr-sweep-to-bottom">Home</a> </li>
-                                    <li><a href="https://www.youtube.com/channel/UC5PHJSIkTNPp7ozf-9oUlsA" class="hvr-sweep-to-bottom">Youtube</a> </li>
-                                    <li><a href="https://www.facebook.com/rapwars/" class="hvr-sweep-to-bottom">Facebook</a> </li>
-                                    <li><a href="blog.html" class="hvr-sweep-to-bottom">Blog</a></li>
-                                    <li><a href="http://goo.gl/forms/dw68bBf4d4" class="hvr-sweep-to-bottom">Register</a></li>
+                                    <li><a href="https://www.youtube.com/channel/UC5PHJSIkTNPp7ozf-9oUlsA" class="hvr-highlight"><i class="fa fa-youtube"></i></a> </li>
+                                    <li><a href="https://www.facebook.com/rapwars/" class="hvr-highlight"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="blog.html" class="hvr-highlight"><i class="fa fa-wordpress"></i></a></li>
+                                    <li><a href="http://goo.gl/forms/dw68bBf4d4" class="hvr-highlight">Register</a></li>
                                     <div class="clearfix"> </div>
                                 </ul>
                                 <!--script-->
@@ -558,129 +724,38 @@
             </div>
         </div>
         <div class="section" id="section1">
-            <!--content-->
-            <div class="content">
-                <div class="container">
-                    <!--content-top-->
-                    <div class="content-top">
-                        <div class="col-md-7 content-top1">
-                            <h3>Welcome</h3>
-                            <p>RAP WARS is an initiative to provide a platform for underground rap battlers in India. Today, it is the only nationwide freestyle rap battling competitions in India. Rap Wars is also one of the kernel events at Oasis, the second largest cultural fest in the country.</p>
-                            <p>After five successful editions, Rap Wars now brings the battle to your own city.  Rap Wars shall now be conducting it's elimination rounds in Delhi, Bangalore, Mumbai and Kolkata.</p>
-                            <p>Date: 19th of October to the 24th of October, 2016</p>
-                        </div>
-                        <div class="col-md-5 top-col">
-                            <div class="col1">
-                                <div class="col-md-6 col2">
-                                    <!-- <img src="images/ic.png" alt=""> -->
-                                    <img src="images/ic.jpg" alt="" width="100px" height="100px">
-                                </div>
-                                <div class="col-md-6 col3">
-                                    <!-- <img src="images/ic1.png" alt=""> -->
-                                    <img src="images/ic1.jpg" alt="" width="100px" height="100px">
-                                </div>
-                                <div class="clearfix"> </div>
-                            </div>
-                            <div class="col1">
-                                <div class="col-md-6 col4">
-                                    <!-- <img src="images/ic2.png" alt=""> -->
-                                    <img src="images/ic2.jpg" alt="" width="100px" height="100px">
-                                </div>
-                                <div class="col-md-6 col5">
-                                    <!-- <img src="images/ic3.png" alt=""> -->
-                                    <img src="images/ic3.jpg" alt="" width="100px" height="100px">
-                                </div>
-                                <div class="clearfix"> </div>
-                            </div>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <!--//content-top-->
-                    <!--content-mid-->
-                    <div class="content-mid">
-                        <div class="col-md-6 mid">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/AYWojG7U0QI" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-md-6 mid">
-                            <a href="single.html"><img src="images/4.jpg" alt="" width="150px" height="150px">
-                                <div class="mid1">
-                                    <h4>My Album</h4>
-                                    <i class="glyphicon glyphicon-circle-arrow-right"></i>
-                                    <div class="clearfix"> </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!--content-mid-->
+            <h1>Welcome</h1>
+            <div class="wel_container">
+                <div id="carousel">
+                    <figure><img src="http://lorempixel.com/186/116/nature/1" alt=""></figure>
+                    <figure><img src="http://lorempixel.com/186/116/nature/2" alt=""></figure>
+                    <figure><img src="http://lorempixel.com/186/116/nature/3" alt=""></figure>
+                    <figure><img src="http://lorempixel.com/186/116/nature/4" alt=""></figure>
+                    <figure><img src="http://lorempixel.com/186/116/nature/5" alt=""></figure>
+                    <figure><img src="http://lorempixel.com/186/116/nature/6" alt=""></figure>
+                    <figure><img src="http://lorempixel.com/186/116/nature/7" alt=""></figure>
+                    <figure><img src="http://lorempixel.com/186/116/nature/8" alt=""></figure>
+                    <figure><img src="http://lorempixel.com/186/116/people/9" alt=""></figure>
                 </div>
             </div>
-            <!--//content-->
         </div>
         <div class="section" id="section2">
-            <div class="content-middle">
-                <div class="container">
-                    <div class="content-mid-top">
-                        <h3>Team</h3>
-                    </div>
-                    <div class="news">
-                        <div class="col-md-6 new-more">
-                            <div class=" new-more1">
-                                <div class="col-md-2 six">
-                                    <img width="150px" height="150px" src="images/Spit_dope_inc.jpg" alt="">
-                                </div>
-                                <div class="col-md-10 six1">
-                                    <h5>Spit Dope Inc</h5>
-                                    <p>We work organizing Rap Cyphers, Battles & Events to uplift Hip-Hop culture in Delhi, India.</p>
-                                    <a href="https://www.facebook.com/spitdopeinc/"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
-                                </div>
-                                <div class="clearfix"> </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 new-more">
-                            <div class=" new-more1">
-                                <div class="col-md-2 six">
-                                    <img width="150px" height="150px" src="images/Low_Rhyderz.jpg" alt="">
-                                </div>
-                                <div class="col-md-10 six1">
-                                    <h5>Low Rhyderz</h5>
-                                    <p>Shattering the monotony of typical genres explored by new age Indian musicians, Bengaluru’s three year old LOW RHYDERZ are here to broaden the musical landscape.</p>
-                                    <a href="https://www.facebook.com/lowrhyderz/"><i class="glyphicon glyphicon-circle-arrow-right"></i></a> </div>
-                                <div class="clearfix"> </div>
-                            </div>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="news">
-                        <div class="col-md-6 new-more">
-                            <div class=" new-more1">
-                                <div class="col-md-2 six">
-                                    <img width="150px" height="150px" src="images/The_cypher_projekt.jpg" alt="">
-                                </div>
-                                <div class="col-md-10 six1">
-                                    <h5>The Cypher Projekt</h5>
-                                    <p>The Cypher Projekt is a unique initiative by the team of "Sunday Cypher Kolkata" to promote real Hip Hop music. This is how we do it in the City of Joy.</p>
-                                    <a href="https://www.facebook.com/thecypherprojekt/"><i class="glyphicon glyphicon-circle-arrow-right"></i></a> </div>
-                                <div class="clearfix"> </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 new-more">
-                            <div class=" new-more1">
-                                <div class="col-md-2 six">
-                                    <img width="150px" height="150px" src="images/Battle_Bars_Bombay.jpg" alt="">
-                                </div>
-                                <div class="col-md-10 six1">
-                                    <h5>Battle Bars Bombay</h5>
-                                    <p>Official Rap Battle League. Bombay.</p>
-                                    <a href="https://www.facebook.com/battlebarsbombay/"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
-                                </div>
-                                <div class="clearfix"> </div>
-                            </div>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
+            <div class="collection">
+                <div class="cards">
+                    <img src="http://zwartopwit-dev.s3.amazonaws.com/playground/cart_animation/postkaart_1.png" class="card" />
+                    <img src="http://zwartopwit-dev.s3.amazonaws.com/playground/cart_animation/postkaart_1.png" class="card" />
+                    <img src="http://zwartopwit-dev.s3.amazonaws.com/playground/cart_animation/postkaart_3.png" class="card" />
+                    <img src="http://zwartopwit-dev.s3.amazonaws.com/playground/cart_animation/postkaart_4.png" class="card" />
                 </div>
             </div>
-            <!---->
+            <div class="collection">
+                <div class="cards">
+                    <img src="http://zwartopwit-dev.s3.amazonaws.com/playground/cart_animation/postkaart_1.png" class="card" />
+                    <img src="http://zwartopwit-dev.s3.amazonaws.com/playground/cart_animation/postkaart_2.png" class="card" />
+                    <img src="http://zwartopwit-dev.s3.amazonaws.com/playground/cart_animation/postkaart_3.png" class="card" />
+                    <img src="http://zwartopwit-dev.s3.amazonaws.com/playground/cart_animation/postkaart_4.png" class="card" />
+                </div>
+            </div>
         </div>
         <div class="section" id="section3">
             <div class="container">
@@ -843,162 +918,6 @@
             </div>
         </div>
         <div class="section" id="section4">
-            <div class="content">
-                <div class="music" id="music">
-                    <!--light-box-files -->
-                    <!-- requried-jsfiles-for owl -->
-                    <link href="css/owl.carousel.css" rel="stylesheet">
-                    <script src="js/owl.carousel.js"></script>
-                    <script>
-                    $(document).ready(function() {
-                        $("#owl-Bangalore").owlCarousel({
-                            items: 4,
-                            lazyLoad: true,
-                            autoPlay: 900,
-                            pagination: false,
-                        });
-                        $("#owl-Delhi").owlCarousel({
-                            items: 5,
-                            lazyLoad: true,
-                            autoPlay: 900,
-                            pagination: false,
-                        });
-                        $("#owl-Kolkata").owlCarousel({
-                            items: 4,
-                            lazyLoad: true,
-                            autoPlay: 900,
-                            pagination: false,
-                        });
-                        $("#owl-Mumbai").owlCarousel({
-                            items: 4,
-                            lazyLoad: true,
-                            autoPlay: 900,
-                            pagination: false,
-                        });
-                    });
-                    </script>
-                    <!--requried-jsfiles-for owl -->
-                    <!-- start content_slider -->
-                    <div class="container">
-                        <div id="example1">
-                            <h3>Bangalore</h3>
-                            <div id="owl-Bangalore" class="owl-carousel text-center">
-                                <div class="item mar">
-                                    <a href="https://soundcloud.com/smokeythemacha">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="./images/j1.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">SmokeyTheGhost (Judge)</p>
-                                </div>
-                                <div class="item mar">
-                                    <a href="https://www.reverbnation.com/BDealWithit">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="./images/j2.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">BigDeal (Emcee)</p>
-                                </div>
-                                <div class="item mar">
-                                    <a href="https://www.reverbnation.com/xstacysash">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="images/j4.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">XstacySash (Judge)</p>
-                                </div>
-                                <div class="item mar">
-                                    <a href="https://www.facebook.com/PanicOfficialPage">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="./images/j5.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">DjPanic (Dj)</p>
-                                </div>
-                            </div>
-                            <h3>New Delhi</h3>
-                            <div id="owl-Delhi" class="owl-carousel text-center">
-                                <div class="item mar">
-                                    <a href="https://soundcloud.com/thequixotic">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="./images/w1.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">Quixotic (Judge)</p>
-                                </div>
-                                <div class="item mar">
-                                    <a href="https://soundcloud.com/mc-heam">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="images/w3.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">Mc Heam (Emcee)</p>
-                                </div>
-                                <div class="item mar">
-                                    <a href="https://soundcloud.com/youngbloodmusik">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="./images/j2.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">YoungstaAsh (Judge)</p>
-                                </div>
-                                <div class="item mar">
-                                    <a href="https://www.reverbnation.com/theparryg">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="images/j4.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">ParryG (Judge)</p>
-                                </div>
-                                <div class="item mar">
-                                    <a href="https://www.facebook.com/Runjun.singh">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="./images/j5.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">DjRunjun (Dj)</p>
-                                </div>
-                            </div>
-                            <h3>Kolkata</h3>
-                            <div id="owl-Kolkata" class="owl-carousel text-center">
-                                <div class="item mar">
-                                    <a href="https://www.reverbnation.com/cizzy">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="images/w3.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">Cizzy (Judge)</p>
-                                </div>
-                                <div class="item mar">
-                                    <a href="https://www.facebook.com/Arijit.HK.Mallick">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="./images/j2.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">Hardknok (Judge)</p>
-                                </div>
-                                <div class="item mar">
-                                    <a href="https://www.reverbnation.com/joesjoint">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="images/j4.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">Joe (Emcee)</p>
-                                </div>
-                                <div class="item mar">
-                                    <a href="https://www.facebook.com/Kid.Pablo">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="./images/j5.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">DjPablo (Dj)</p>
-                                </div>
-                            </div>
-                            <h3>Mumbai</h3>
-                            <div id="owl-Mumbai" class="owl-carousel text-center">
-                                <div class="item mar">
-                                    <a href="https://www.reverbnation.com/MCDEVILMUMBAI">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="images/w3.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">Dhaval (Judge)</p>
-                                </div>
-                                <div class="item mar">
-                                    <a href="https://www.reverbnation.com/thisisenkore">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="./images/j2.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">Enkore (Judge)</p>
-                                </div>
-                                <div class="item mar">
-                                    <a href="https://www.facebook.com/swadesination">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="images/j4.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">Swadesi (Emcee)</p>
-                                </div>
-                                <div class="https://www.facebook.com/DeejayRidiq">
-                                    <a href="single.html">
-                                        <img class="lazyOwl img-responsive img-circle" data-src="./images/j5.jpg" alt="name" width="150px" />
-                                    </a>
-                                    <p Class="track-title">VickyShriyan (Dj)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="our-partners">
                 <div class="container">
                     <h3>Our past sponsors</h3>
@@ -1033,7 +952,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
 </body>
 
