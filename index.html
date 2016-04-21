@@ -26,13 +26,12 @@
     </script>
     <!--backgroundVideo | fullpage.js-->
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
     <!--[if IE]>
         <script type="text/javascript">
              var console = { log: function() {} };
         </script>
     <![endif]-->
-    <script src="js/Popup_with_Blurred_Background.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
@@ -102,25 +101,43 @@
             <h1>Welcome</h1>
             <div class="wel_container">
                 <div id="carousel">
-                    <figure><img src="http://lorempixel.com/186/116/nature/1" alt=""></figure>
-                    <figure><img src="http://lorempixel.com/186/116/nature/2" alt=""></figure>
-                    <figure><img src="http://lorempixel.com/186/116/nature/3" alt=""></figure>
-                    <figure><img src="http://lorempixel.com/186/116/nature/4" alt=""></figure>
-                    <figure><img src="http://lorempixel.com/186/116/nature/5" alt=""></figure>
-                    <figure><img src="http://lorempixel.com/186/116/nature/6" alt=""></figure>
-                    <figure><img src="http://lorempixel.com/186/116/nature/7" alt=""></figure>
-                    <figure><img src="http://lorempixel.com/186/116/nature/8" alt=""></figure>
-                    <figure><img src="http://lorempixel.com/186/116/people/9" alt=""></figure>
+                    <figure><img src="./images/b1.jpg" alt=""></figure>
+                    <figure><img src="./images/b1.jpg" alt=""></figure>
+                    <figure><img src="./images/b1.jpg" alt=""></figure>
+                    <figure><img src="./images/b1.jpg" alt=""></figure>
+                    <figure><img src="./images/b1.jpg" alt=""></figure>
+                    <figure><img src="./images/b1.jpg" alt=""></figure>
+                    <figure><img src="./images/b1.jpg" alt=""></figure>
+                    <figure><img src="./images/b1.jpg" alt=""></figure>
+                    <figure><img src="./images/b1.jpg" alt=""></figure>
                 </div>
             </div>
         </div>
         <div class="section" id="section2">
             <h1>Hosts and Judges</h1>
+            <!-- Modal -->
+            <div class="modal fade" id="fsModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>This is a large modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal -->
             <div class="row">
                 <div class="col-md-6">
                     <div class="collection">
                         <div class="cards">
-                            <a href="#" id="foo"><img src="./images/ba1.jpg" class="card"></a>
+                            <a data-toggle="modal" data-target="#fsModal"><img src="./images/ba1.jpg" class="card"></a>
                             <img src="./images/ba2.jpg" class="card" />
                             <img src="./images/ba3.jpg" class="card" />
                             <img src="./images/ba4.jpg" class="card" />
