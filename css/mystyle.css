@@ -1,5 +1,4 @@
 @font-face {
-    /*font-family: 'Open Sans', sans-serif;*/
     font-family: 'Roboto Condensed';
     src: url(../fonts/Roboto-Condensed.ttf) format('truetype');
 }
@@ -11,31 +10,6 @@
 
 body {
     font-family: 'Roboto Condensed';
-    background: #000;
-}
-
-body a {
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label {
-    margin: 0;
 }
 
 .header {
@@ -191,6 +165,14 @@ h1 {
     height: 140px;
     position: relative;
     perspective: 1000px;
+}
+
+.blur-filter {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
 }
 
 #carousel {
