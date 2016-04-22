@@ -171,7 +171,7 @@
 
 
 /* music_life-web
-    * --------------------------------------- */
+* --------------------------------------- */
 
 .port-grid {
     padding: 0px;
@@ -408,21 +408,21 @@
 
 
 /*.modal-content {
-    position: absolute;
-    top: 10vh;
-    right: 10vw;
-    bottom: 10vh;
-    left: 10vw;
-    box-shadow: none;
+position: absolute;
+top: 10vh;
+right: 10vw;
+bottom: 10vh;
+left: 10vw;
+box-shadow: none;
 }
 
 .modal-body {
-    position: absolute;
-    top: 50px;
-    bottom: 60px;
-    width: 100vw;
-    font-weight: 300;
-    overflow: auto;
+position: absolute;
+top: 50px;
+bottom: 60px;
+width: 100vw;
+font-weight: 300;
+overflow: auto;
 }*/
 
 
@@ -608,3 +608,49 @@
 
 
 /*-- //team --*/
+
+
+/*-- responsive media queries --*/
+
+@media (max-width: 1024px) {
+    .ch-grid li {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .ch-grid li:nth-child(4) {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .ch-grid li:nth-child(4) {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 667px) {
+    .ch-grid li:nth-child(4),
+    .ch-grid li:nth-child(3) {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ch-grid li {
+        margin: 0 6px;
+    }
+    .ch-grid li:nth-child(4),
+    .ch-grid li:nth-child(3) {
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .ch-grid li:nth-child(4),
+    .ch-grid li:nth-child(3),
+    .ch-grid li:nth-child(2) {
+        margin-top: 15px;
+    }
+}
