@@ -513,7 +513,51 @@ overflow: auto;
 .b-img-4 {
     background-image: url(../images/b4.jpg);
 }
+.d-img-1 {
+    background-image: url(../images/d1.jpg);
+}
 
+.d-img-2 {
+    background-image: url(../images/d2.jpg);
+}
+
+.d-img-3 {
+    background-image: url(../images/d3.jpg);
+}
+
+.d-img-4 {
+    background-image: url(../images/d4.jpg);
+}
+.k-img-1 {
+    background-image: url(../images/k1.jpg);
+}
+
+.k-img-2 {
+    background-image: url(../images/k2.jpg);
+}
+
+.k-img-3 {
+    background-image: url(../images/k3.jpg);
+}
+
+.k-img-4 {
+    background-image: url(../images/k4.jpg);
+}
+.m-img-1 {
+    background-image: url(../images/m1.jpg);
+}
+
+.m-img-2 {
+    background-image: url(../images/m2.jpg);
+}
+
+.m-img-3 {
+    background-image: url(../images/m3.jpg);
+}
+
+.m-img-4 {
+    background-image: url(../images/m4.jpg);
+}
 .sb {
     width: 162px !important;
     height: 162px !important;
