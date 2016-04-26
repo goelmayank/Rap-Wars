@@ -24,7 +24,7 @@ body {
 /********************************************************/
 /*                    Navigation bar                    */
 /********************************************************/
-.mainmenu { z-index: 999999; width:100%;  padding: 30px 0 0 0;}
+.mainmenu { z-index: 10; width:100%;  padding: 30px 0 0 0;}
 @media (min-width: 768px) {
 	.mainmenu { position: fixed; }
 }
@@ -147,7 +147,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 
 .title,
 .subtitle { 
-	font-family: Effra, Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-weight:normal;
 	font-size:7em;
 	margin-bottom:15px; 
@@ -207,7 +207,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	background: rgba(255,255,255,.5);
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
-	background: rgba(255,255,255,.8);
+	background: rgba(255,255,255,.3);
 }
 .btn-primary {
 	background: rgba(255,255,255,.2);
@@ -308,11 +308,11 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 .theme-invert .navbar-toggle .icon-bar {
   background: #fff;
 }
-.theme-invert .mainmenu .dropdown-menu a { 
+/*.theme-invert .mainmenu .dropdown-menu a { 
 	color:#fff;
-}
+}*/
 .theme-invert .mainmenu .dropdown-menu a:hover { 
-	background:rgba(255,255,255,.8);
+	background:rgba(255,255,255,.3);
 	color:#fff;
 }
 
@@ -323,13 +323,13 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 }
 
 .theme-invert .btn-default {
-	background: rgba(0,0,0,.8);
+	background: rgba(0,0,0,.3);
 }
 .theme-invert .btn-default:hover,
 .theme-invert .btn-default:focus,
 .theme-invert .btn-default:active,
 .theme-invert .btn-default.active {
-	background: rgba(255,255,255,.6);
+	background: rgba(255,255,255,.5);
 	color:#fff;
 }
 .theme-invert .btn-primary {
@@ -344,7 +344,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 }
 
 .theme-invert .thumbnail {
-	/*background-color: rgba(255,255,255,.8);*/
+	background-color: rgba(255,255,255,.3);
 }
 .thumbnail .caption {
 	color: inherit;

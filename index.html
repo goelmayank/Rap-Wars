@@ -3,11 +3,26 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>RAP WARS 2016 | BITS Pilani</title>
     <meta name="description" content="">
-    <meta name="author" content="Siddhant Narula">
-    <title>Rap Wars - Nationwide Rap Battling Competition at Oasis, BITS Pilani</title>
-    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta http-equiv="content-language" content="EN">
+    <meta name="copyright" content="Copyright © 2015 Department Of Visual Media, BITS Pilani">
+    <meta name="author" content="Department Of Visual Media, BITS Pilani">
+    <meta name="email" content="dvm@bits-bits.org">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="Global">
+    <meta name="revisit-after" content="2 days">
+    <meta property="og:title" content="RAP WARS 2016 | OASIS | BITS Pilani">
+    <meta property="og:site_name" content="RAP WARS 2016">
+    <meta property="og:url" content="http://www.bits-oasis.org/rapwars">
+    <meta property="og:description" content="Rap Wars was started as an initiative to provide an oppurtunity to a underground Rap battlers in India. Today Rap Wars is the only nationwide freestyle rap battling competition in India. Rap Wars is also one of the kernel Prelims at Oasis,the second largest cultural fest in Asia. After five successful editions, Rap Wars now brings the battle to your own city. Rap Wars shall now be conducting it's elimination rounds in Delhi, Bangalore, Mumbai and Kolkata.">
+    <meta property="og:image" content="assets/images/favicon.png">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
     <!-- Bootstrap itself -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles -->
@@ -15,24 +30,36 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Fonts -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='assets/fonts/Effra.ttf' rel='stylesheet' type='text/css'>
+    <link href='assets/fonts/helvetica-normal.ttf' rel='stylesheet' type='text/css'>
 </head>
 <!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
 
 <body class="theme-invert">
+    <div>
+        <ul class="share-buttons">
+            <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.bits-oasis.org/rapwars" title="Share on Facebook" target="_blank"><img class="social-icon" src="assets/images/flat_web_icon_set/inverted/Facebook.png"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/intent/tweet?source=http://www.bits-oasis.org/rapwars&text=Rap%20Wars:%20http://www.bits-oasis.org/rapwars" target="_blank" title="Tweet"><img class="social-icon" src="assets/images/flat_web_icon_set/inverted/Twitter.png"></a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/share?url=http://www.bits-oasis.org/rapwars" target="_blank" title="Share on Google+"><img class="social-icon" src="assets/images/flat_web_icon_set/inverted/Google+.png"></a>
+            </li>
+        </ul>
+    </div>
     <nav class="mainmenu">
         <div class="container">
             <div class="dropdown">
                 <button type="button" id="hamburger_button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                <!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                    <li><a href="#head" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#pastperformers">Past Performers</a></li>
-                    <li><a href="#sponsors">Past Sponsors</a></li>
-                    <li><a href="#contact">Get in touch</a></li>
+                    <li><a class='list-item' href="#head" class="active">Home</a></li>
+                    <li><a class='list-item' href="#about">About</a></li>
+                    <li><a class='list-item' href="#gallery">Gallery</a></li>
+                    <li><a class='list-item' href="#Prelims">Prelims</a></li>
+                    <li><a class='list-item' href="#pastperformers">Past Performers</a></li>
+                    <li><a class='list-item' href="#sponsors">Past Sponsors</a></li>
+                    <li><a class='list-item' href="#contact">Get in touch</a></li>
                 </ul>
             </div>
         </div>
@@ -42,7 +69,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
-                    <p><a href="http://goo.gl/forms/dw68bBf4d4" id="register" class="btn btn-default btn-lg">Register Now</a></p>
+                    <p><a href="#" id="register" class="btn btn-default btn-lg">Register Now</a></p>
                 </div>
                 <!-- /col -->
             </div>
@@ -56,18 +83,20 @@
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-2">
                     <h5><strong>What is Rap Wars?<br></strong></h5>
-                    <p>Rap Wars was started as an initiative to provide an oppurtunity to a underground Rap battlers in India. Today Rap Wars is the only nationwide freestyle rap battling competition in India. Rap Wars is also one of the kernel events at Oasis,the second largest cultural fest in Asia. After five successful editions, Rap Wars now brings the battle to your own city. Rap Wars shall now be conducting it's elimination rounds in Delhi, Bangalore, Mumbai and Kolkata.
+                    <p>Rap Wars was started as an initiative to provide an oppurtunity to a underground Rap battlers in India. Today Rap Wars is the only nationwide freestyle rap battling competition in India. Rap Wars is also one of the kernel Prelims at Oasis,the second largest cultural fest in Asia. After five successful editions, Rap Wars now brings the battle to your own city. Rap Wars shall now be conducting it's elimination rounds in Delhi, Bangalore, Mumbai and Kolkata.
                     </p>
                 </div>
                 <div class="col-sm-4">
                     <h5><strong>Past Judges and Winners<br></strong></h5>
                     <p>Rap Wars has previously featured judges like Smokey, Brodha V, Vivian Divine and Xstacy Sash. We also had participants such as Rob C, Kav-E, Akash Aeke Khandelwal and Dhruv Singh as previous winners some of whom have gone on to score major record deals.
                     </p>
+                    <!-- <h5><strong>Author links<br></strong></h5>    
+                <p><a href="http://be.net/pozhilov9409">Behance</a> / <a href="https://twitter.com/serggg">Twitter</a> / <a href="http://linkedin.com/pozhilov">LinkedIn</a> / <a href="https://www.facebook.com/pozhilov">Facebook</a></p> -->
                 </div>
             </div>
         </div>
     </section>
-    <!-- Third (Gallery) section -->
+    <!-- Third (Works) section -->
     <section class="section" id="gallery">
         <div class="container">
             <h2 class="text-center title">Gallery</h2>
@@ -89,265 +118,55 @@
             </div>
         </div>
     </section>
-    <!-- Fourth (Events) section -->
-    <section class="section" id="events">
+    <!-- Fourth (Collaborators) section -->
+    <section class="section" id="Prelims">
         <div class="container">
-            <h2 class="text-center title">Events</h2>
-            <div class="collection">
-                <div class="cards">
-                    <a href="#" data-toggle="modal" data-target="#Mumbai"><img src="assets/images/e1.jpg" class="card" /></a>
-                    <div id="Mumbai" class="modal fade" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <div id="structure" class="team">
-                                        <div class="container">
-                                            <h4 class="modal-title">Mumbai</h4>
-                                            <ul class="ch-grid">
-                                                <li>
-                                                    <div class="ch-item b-img-1">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front b-img-1"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal1" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Smokey<br>Judge</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="ch-item ch-img-2">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front ch-img-2"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal2" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Xstacy Sash<br>Judge</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="ch-item ch-img-3">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front ch-img-3"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal4" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Big Deal<br>Emcee</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="ch-item ch-img-4">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front ch-img-4"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal3" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Dj Panic<br>Dj</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+            <h2 class="text-center title">Prelims</h2>
+            <div class="row" id="card_id">
+                <div class="collection">
+                    <div class="cards">
+                        <a href="#"><img src="assets/images/c1.jpg" class="card" alt="" data-toggle="modal" data-target="#delhi" /></a>
+                        <a href="#"><img src="assets/images/c2.jpg" class="card" alt="" data-toggle="modal" data-target="#mumbai" /></a>
+                        <a href="#"><img src="assets/images/c3.jpg" class="card" alt="" data-toggle="modal" data-target="#bangalore" /></a>
+                        <a href="#"><img src="assets/images/c4.jpg" class="card" alt="" data-toggle="modal" data-target="#kolkata" /></a>
+                    </div>
+                </div>
+                <div class="modal fade" id="delhi">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <img src="assets/images/delhi.png" alt="" />
                             </div>
                         </div>
                     </div>
-                    <a href="#" data-toggle="modal" data-target="#Bangalore"><img src="assets/images/e2.jpg" class="card" /></a>
-                    <div id="Bangalore" class="modal fade" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <div id="structure" class="team">
-                                        <div class="container">
-                                            <h4 class="modal-title">Bangalore</h4>
-                                            <ul class="ch-grid">
-                                                <li>
-                                                    <div class="ch-item b-img-1">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front b-img-1"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal1" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Smokey<br>Judge</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="ch-item ch-img-2">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front ch-img-2"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal2" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Xstacy Sash<br>Judge</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="ch-item ch-img-3">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front ch-img-3"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal4" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Big Deal<br>Emcee</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="ch-item ch-img-4">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front ch-img-4"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal3" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Dj Panic<br>Dj</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                </div>
+                <div class="modal fade" id="mumbai">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <img src="assets/images/mumbai.png" alt="" />
                             </div>
                         </div>
                     </div>
-                    <a href="#" data-toggle="modal" data-target="#Delhi"><img src="assets/images/e3.jpg" class="card" /></a>
-                    <div id="Delhi" class="modal fade" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <div id="structure" class="team">
-                                        <div class="container">
-                                            <h4 class="modal-title">New Delhi</h4>
-                                            <ul class="ch-grid">
-                                                <li>
-                                                    <div class="ch-item b-img-1">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front b-img-1"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal1" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Smokey<br>Judge</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="ch-item ch-img-2">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front ch-img-2"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal2" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Xstacy Sash<br>Judge</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="ch-item ch-img-3">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front ch-img-3"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal4" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Big Deal<br>Emcee</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="ch-item ch-img-4">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front ch-img-4"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal3" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Dj Panic<br>Dj</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                </div>
+                <div class="modal fade" id="bangalore">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <img src="assets/images/bangalore.png" alt="" />
                             </div>
                         </div>
                     </div>
-                    <a href="#" data-toggle="modal" data-target="#Kolkata"><img src="assets/images/e4.jpg" class="card" /></a>
-                    <div id="Kolkata" class="modal fade" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <div id="structure" class="team">
-                                        <div class="container">
-                                            <h4 class="modal-title">Kolkata</h4>
-                                            <ul class="ch-grid">
-                                                <li>
-                                                    <div class="ch-item b-img-1">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front b-img-1"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal1" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Smokey<br>Judge</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="ch-item ch-img-2">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front ch-img-2"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal2" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Xstacy Sash<br>Judge</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="ch-item ch-img-3">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front ch-img-3"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal4" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Big Deal<br>Emcee</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="ch-item ch-img-4">
-                                                        <div class="ch-info-wrap">
-                                                            <div class="ch-info">
-                                                                <div class="ch-info-front ch-img-4"></div>
-                                                                <div class="ch-info-back">
-                                                                    <a href="#myModal3" role="button" class="btn btn-default sb" data-toggle="modal"><h4>Dj Panic<br>Dj</h4></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                </div>
+                <div class="modal fade" id="kolkata">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <img src="assets/images/kolkata.png" alt="" />
                             </div>
                         </div>
                     </div>
@@ -359,159 +178,9 @@
     <section class="section" id="pastperformers">
         <div class="container">
             <h2 class="text-center title">Past Performers</h2>
-            <div class="banner-albums">
-                <div id="portfoliolist">
-                    <div class="port-grid">
-                        <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <a href="" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
-                                    <img class="img-responsive lot" src="assets/images/g1.jpg" alt="">
-                                    <div class="b-wrapper">
-                                        <div class="b-animate b-from-left b-delay03 ">
-                                            <p class="plus">Rock</p>
-                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
-                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <a href="" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
-                                    <img class="img-responsive lot" src="assets/images/g2.jpg" alt="">
-                                    <div class="b-wrapper">
-                                        <div class="b-animate b-from-left b-delay03 ">
-                                            <p class="plus">African</p>
-                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
-                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="port-grid">
-                        <div class="portfolio mov mix_all" data-cat="mov" style="display: inline-block; opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <a href="" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
-                                    <img class="img-responsive lot" src="assets/images/g3.jpg" alt="">
-                                    <div class="b-wrapper">
-                                        <div class="b-animate b-from-left b-delay03 ">
-                                            <p class="plus">Hip Hop</p>
-                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
-                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <a href="" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
-                                    <img class="img-responsive lot" src="assets/images/g6.jpg" alt="">
-                                    <div class="b-wrapper">
-                                        <div class="b-animate b-from-left b-delay03 ">
-                                            <p class="plus">Folk</p>
-                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
-                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="port-grid">
-                        <div class="portfolio mov mix_all" data-cat="mov" style="display: inline-block; opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <a href="" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
-                                    <img class="img-responsive lot" src="assets/images/g5.jpg" alt="">
-                                    <div class="b-wrapper">
-                                        <div class="b-animate b-from-left b-delay03 ">
-                                            <p class="plus">Indie</p>
-                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
-                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="portfolio set mix_all" data-cat="set" style="display: inline-block; opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <a href="" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
-                                    <img class="img-responsive lot" src="assets/images/g10.jpg" alt="">
-                                    <div class="b-wrapper">
-                                        <div class="b-animate b-from-left b-delay03 ">
-                                            <p class="plus">College</p>
-                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
-                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="port-grid">
-                        <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <a href="" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
-                                    <img class="img-responsive lot" src="assets/images/g4.jpg" alt="">
-                                    <div class="b-wrapper">
-                                        <div class="b-animate b-from-left b-delay03 ">
-                                            <p class="plus">Punk</p>
-                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
-                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <a href="" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
-                                    <img class="img-responsive lot" src="assets/images/g8.jpg" alt="">
-                                    <div class="b-wrapper">
-                                        <div class="b-animate b-from-left b-delay03 ">
-                                            <p class="plus">Art Punk</p>
-                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
-                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="port-grid">
-                        <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <a href="" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
-                                    <img class="img-responsive lot" src="assets/images/g9.jpg" alt="">
-                                    <div class="b-wrapper">
-                                        <div class="b-animate b-from-left b-delay03 ">
-                                            <p class="plus">Jazz</p>
-                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
-                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <a href="" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go">
-                                    <img class="img-responsive lot" src="assets/images/g7.jpg" alt="">
-                                    <div class="b-wrapper">
-                                        <div class="b-animate b-from-left b-delay03 ">
-                                            <p class="plus">Rock</p>
-                                            <div class="port-like"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>3</div>
-                                            <div class="port-heart"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>3</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
+            <div class="row">
+                <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+                    <img src="assets/images/pastperformers.jpg" alt="" />
                 </div>
             </div>
         </div>
@@ -542,8 +211,8 @@
                         <br>
                     </p>
                     <ul class="list-inline list-social">
-                        <li><a href="https://bits-oasis.org/rapwars/blog" class="btn btn-link"><i class="fa fa-wordpress fa-fw"></i> Blog</a></li>
-                        <li><a href="https://www.youtube.com/channel/UC5PHJSIkTNPp7ozf-9oUlsA" class="btn btn-link"><i class="fa fa-youtube fa-fw"></i> Youtube</a></li>
+                        <li><a href="https://bits-oasis.org/rapwars/blog" class="btn btn-link"><i class="fa fa-rss fa-fw"></i> Blog</a></li>
+                        <li><a href="https://www.youtube.com/channel/UC5PHJSIkTNPp7ozf-9oUlsA" class="btn btn-link"><i class="fa fa-youtube fa-fw"></i> YouTube</a></li>
                         <li><a href="https://www.facebook.com/rapwars/" class="btn btn-link"><i class="fa fa-facebook fa-fw"></i> Facebook</a></li>
                     </ul>
                 </div>
