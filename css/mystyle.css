@@ -1,0 +1,18 @@
+ul.share-buttons {
+    list-style: none;
+    padding: 0;
+    position: fixed;
+    top: 2vh;
+    right: 2em;
+    z-index: 100;
+}
+
+ul.share-buttons li {
+    display: inline !important;
+}
+
+.social-icon {
+    width: 30px;
+    margin: 4px;
+    height: 30px;
+}

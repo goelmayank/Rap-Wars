@@ -20,9 +20,9 @@
     <meta property="og:site_name" content="RAP WARS 2016">
     <meta property="og:url" content="http://www.bits-oasis.org/rapwars">
     <meta property="og:description" content="Rap Wars was started as an initiative to provide an oppurtunity to a underground Rap battlers in India. Today Rap Wars is the only nationwide freestyle rap battling competition in India. Rap Wars is also one of the kernel Prelims at Oasis,the second largest cultural fest in Asia. After five successful editions, Rap Wars now brings the battle to your own city. Rap Wars shall now be conducting it's elimination rounds in Delhi, Bangalore, Mumbai and Kolkata.">
-    <meta property="og:image" content="assets/images/favicon.png">
+    <meta property="og:image" content="img/favicon.png">
     <meta property="og:type" content="website">
-    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link rel="shortcut icon" href="img/favicon.png" />
     <script type="application/x-javascript">
     addEventListener("load", function() {
         setTimeout(hideURLbar, 0);
@@ -37,6 +37,8 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="css/lightbox.css">
     <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- //My files -->
+    <link href="css/mystyle.css" type="text/css" rel="stylesheet" media="all">
     <!-- js -->
     <script src="js/jquery-1.11.1.min.js"></script>
     <!-- //js -->
@@ -60,7 +62,7 @@
     <div class="header" id="home">
         <div class="container">
             <div id="loginContainer" class="sign-farm">
-                <button type="button" id="loginButton" class="wow fadeInDown animated" data-wow-delay=".5s"><span class="glyphicon glyphicon-user" aria-hidden="true">Login</span></button>
+                <button type="button" id="loginButton" class="wow fadeInDown animated" data-wow-delay=".5s"><span class="glyphicon glyphicon-user" aria-hidden="true">Register</span></button>
                 <div id="loginBox">
                     <form id="loginForm">
                         <fieldset id="body">
@@ -80,14 +82,19 @@
                     </form>
                 </div>
             </div>
-            <form class="navbar-form navbar-right search-box wow fadeInDown animated" data-wow-delay=".5s">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <button type="submit" class="btn btn-default" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </form>
+            <div>
+                <ul class="share-buttons">
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.bits-oasis.org/rapwars" title="Share on Facebook" target="_blank"><img class="social-icon" src="img/flat_web_icon_set/inverted/Facebook.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/intent/tweet?source=http://www.bits-oasis.org/rapwars&text=Rap%20Wars:%20http://www.bits-oasis.org/rapwars" target="_blank" title="Tweet"><img class="social-icon" src="img/flat_web_icon_set/inverted/Twitter.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/share?url=http://www.bits-oasis.org/rapwars" target="_blank" title="Share on Google+"><img class="social-icon" src="img/flat_web_icon_set/inverted/Google+.png"></a>
+                    </li>
+                </ul>
+            </div>
             <div class="clearfix"> </div>
         </div>
     </div>
@@ -140,7 +147,7 @@
             <div class="clearfix"> </div>
         </div>
         <div class="banner-text">
-            <h1><a href="index.html" class="wow fadeInUp animated" data-wow-delay=".5s"> Warbler </a></h1>
+            <h1><a href="index.html" class="wow fadeInUp animated" data-wow-delay=".5s"> Rap Wars </a></h1>
             <h2 class="wow fadeInUp animated" data-wow-delay=".7s">Music is the Rhythm of life! </h2>
             <a href="#about" class="scroll bnr-about wow fadeInUp animated" data-wow-delay=".9s">About</a>
             <a href="#news" class="scroll bnr-about bnr-news wow fadeInUp animated" data-wow-delay="1s">News</a>
@@ -154,8 +161,8 @@
             <div class="col-md-7 about-left wow fadeInUp animated" data-wow-delay=".7s">
             </div>
             <div class="col-md-5 about-right wow fadeInUp animated" data-wow-delay=".9s">
-                <h4>Claritas est etiam processus dynaicus qui mirum</h4>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit nesciunt.</p>
+                <h4>What is Rap Wars?</h4>
+                <p>Rap Wars was started as an initiative to provide an oppurtunity to underground Rap battlers in India. Today Rap Wars is the only nationwide freestyle rap battling competition in India. Rap Wars is also one of the kernel Prelims at Oasis,the second largest cultural fest in Asia. After five successful editions, Rap Wars now brings the battle to your own city. Rap Wars shall now be conducting it's elimination rounds in Delhi, Bangalore, Mumbai and Kolkata.</p>
             </div>
             <div class="clearfix"> </div>
             <div class="about-bottom">
@@ -447,7 +454,7 @@
                     })
                     </script>
                 </div>
-                <p class="wow fadeInUp animated" data-wow-delay=".7s">© 2016 Warbler . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+                <p class="wow fadeInUp animated" data-wow-delay=".7s">© 2016 Rap Wars . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
             </div>
         </div>
     </div>
@@ -493,10 +500,10 @@
     $(document).ready(function() {
         /*
         var defaults = {
-        	containerID: 'toTop', // fading element id
-        	containerHoverID: 'toTopHover', // fading element hover id
-        	scrollSpeed: 1200,
-        	easingType: 'linear' 
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear' 
         };
         */
 
