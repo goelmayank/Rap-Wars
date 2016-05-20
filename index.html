@@ -371,11 +371,11 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.997781495358!2d75.58570151507647!3d28.358916682526573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1fbad30854cf884d!2sBirla+Institute+of+Technology+%26+Science!5e0!3m2!1sen!2s!4v1463428762487" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <div class="col-md-4 contact-grids wow fadeInRight animated" data-wow-delay=".7s">
-                    <form>
-                        <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-                        <input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-                        <input type="text" value="Telephone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}" required="">
-                        <textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+                    <form action="http://bits-oasis.org/2016/accounts/mailrapwarsadmin/" method="POST">
+                        <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="" name="name">
+                        <input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="" name="email">
+                        <input type="text" value="Telephone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}" required="" name="phone">
+                        <textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="" name="message">Message...</textarea>
                         <input type="submit" value="Submit">
                     </form>
                 </div>
