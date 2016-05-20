@@ -19,7 +19,7 @@
     <meta property="og:title" content="RAP WARS 2016 | OASIS | BITS Pilani">
     <meta property="og:site_name" content="RAP WARS 2016">
     <meta property="og:url" content="http://www.bits-oasis.org/rapwars">
-    <meta property="og:description" content="Rap Wars was started as an initiative to provide an opportunity to underground Rap battlers in India. Today Rap Wars is India's only nationwide rap battling competition. Rap Wars is also one of the kernel events at Oasis, the second largest cultural fest in Asia. After five successful editions, Rap Wars now brings the battle to your own city. Rap Wars shall now be conducting it's prelims in Delhi, Bangalore, Mumbai and Kolkata.">
+    <meta property="og:description" content="Rap Wars was started as an initiative to provide an opportunity to underground Rap battlers in India. Today Rap Wars is India's only nationwide rap battling competition. Rap Wars is also one of the kernel events at Oasis, the second largest cultural fest in Asia. After five successful editions, Rap Wars now brings the battle to your own city. Rap Wars shall now be conducting it's prelims in Delhi, Bangalore, Kolkata and Mumbai">
     <meta property="og:image" content="images/favicon.png">
     <meta property="og:type" content="website">
     <link rel="shortcut icon" href="images/favicon.png" />
@@ -84,6 +84,19 @@
                     </form>
                 </div>
             </div>
+            <div>
+                <ul class="share-buttons">
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.bits-oasis.org/rapwars" title="Share on Facebook" target="_blank"><img class="social-icon" src="images/flat_web_icon_set/inverted/Facebook.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/intent/tweet?source=http://www.bits-oasis.org/rapwars&text=Rap%20Wars:%20http://www.bits-oasis.org/rapwars" target="_blank" title="Tweet"><img class="social-icon" src="images/flat_web_icon_set/inverted/Twitter.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/share?url=http://www.bits-oasis.org/rapwars" target="_blank" title="Share on Google+"><img class="social-icon" src="images/flat_web_icon_set/inverted/Google+.png"></a>
+                    </li>
+                </ul>
+            </div>
             <div class="clearfix"> </div>
         </div>
     </div>
@@ -136,7 +149,7 @@
             <div class="clearfix"> </div>
         </div>
         <div class="banner-text">
-            <h1><a href="index.html" class="wow fadeInUp animated" data-wow-delay=".5s"> Rap Wars </a></h1>
+            <h1><a href="index.html" class="wow fadeInUp animated" id="RapWars" data-wow-delay=".5s"> Rap Wars </a></h1>
             <h2 class="wow fadeInUp animated" data-wow-delay=".7s">India's largest platform for rappers</h2>
             <a href="#about" class="scroll bnr-about wow fadeInUp animated" data-wow-delay=".9s">About</a>
             <a href="#news" class="scroll bnr-about bnr-news wow fadeInUp animated" data-wow-delay="1s">Sponsors</a>
@@ -198,16 +211,6 @@
         <div class="container">
             <h3 class="title wow fadeInUp animated" data-wow-delay=".5s">Prelims</h3>
             <div class="team-info">
-                <div class="col-md-3 team-grids wow flipInY animated" data-wow-delay=".5s">
-                    <a href="#">
-                        <img class="img-responsive" src="images/Bangalore.jpg" alt="">
-                        <div class="captn">
-                            <h4>Bangalore</h4>
-                            <p>Venue: blueFROG </p>
-                            <p>Time: 29th May, 3pm to 7pm</p>
-                        </div>
-                    </a>
-                </div>
                 <div class="col-md-3 team-grids wow flipInY animated" data-wow-delay=".7s">
                     <a href="#">
                         <img class="img-responsive" src="images/Delhi.jpg" alt="">
@@ -215,6 +218,16 @@
                             <h4>Delhi</h4>
                             <p>Venue: Social Offline</p>
                             <p>Venue: 3rd June, 7pm to 11pm</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 team-grids wow flipInY animated" data-wow-delay=".5s">
+                    <a href="#">
+                        <img class="img-responsive" src="images/Bangalore.jpg" alt="">
+                        <div class="captn">
+                            <h4>Bangalore</h4>
+                            <p>Venue: blueFROG </p>
+                            <p>Time: 29th May, 3pm to 7pm</p>
                         </div>
                     </a>
                 </div>
@@ -249,30 +262,30 @@
                 <div class="col-md-6 services-grids wow fadeInUp animated" data-wow-delay=".5s">
                     <div class="thumbnail">
                         <div class="moments-bottom">
-                            <a href="images/Kolkata-Artists.jpg" data-lightbox="example-set">
-                                <img src="images/Kolkata-Artists.jpg" class="img-responsive zoom-img " alt="">
-                            </a>
-                        </div>
-                        <div class="caption services-caption">
-                            <h4>Kolkata-Artists</h4>
-                            <p>Cizzy(Judge) | Hardknok(Judge) | Joe(Host) | Pablo (DJ)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 services-grids wow fadeInUp animated" data-wow-delay=".7s">
-                    <div class="thumbnail">
-                        <div class="moments-bottom">
                             <a href="images/Bangalore-Artists.jpg" data-lightbox="example-set">
                                 <img src="images/Bangalore-Artists.jpg" class="img-responsive zoom-img " alt="">
                             </a>
                         </div>
                         <div class="caption services-caption">
                             <h4>Bangalore-Artists</h4>
-                            <p>Smokey(Judge) | Xstacy Sash(Judge) | Big Deal(Host) | Panic (DJ)</p>
+                            <p>Big Deal(Host) | Xstacy Sash(Judge) | Smokey(Judge) | Panic (DJ)</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 services-grids wow fadeInUp animated" data-wow-delay=".5s">
+                    <div class="thumbnail">
+                        <div class="moments-bottom">
+                            <a href="images/Kolkata-Artists.jpg" data-lightbox="example-set">
+                                <img src="images/Kolkata-Artists.jpg" class="img-responsive zoom-img " alt="">
+                            </a>
+                        </div>
+                        <div class="caption services-caption">
+                            <h4>Kolkata-Artists</h4>
+                            <p>Joe(Host) | Cizzy(Judge) | Hardknok(Judge) | Pablo(DJ)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 services-grids wow fadeInUp animated" data-wow-delay=".7s">
                     <div class="thumbnail">
                         <div class="moments-bottom">
                             <a href="images/Delhi-Artists.jpg" data-lightbox="example-set">
@@ -281,7 +294,7 @@
                         </div>
                         <div class="caption services-caption">
                             <h4>Delhi-Artists</h4>
-                            <p>Quixotic(Judge) | Parry G(Judge) | Youngsta Ash(Judge) | Mc Heam(Host) | Runjun(DJ)</p>
+                            <p>Mc Heam(Host) | Quixotic(Judge) | Parry G(Judge) | Youngsta Ash(Judge) | Runjun(DJ)</p>
                         </div>
                     </div>
                 </div>
@@ -294,7 +307,7 @@
                         </div>
                         <div class="caption services-caption">
                             <h4>Mumbai-Artists</h4>
-                            <p>Dhaval aka D’evil(Judge) | Enkore(Judge) | Shaikhspeare(Judge) | Swadesi(Host) | Vicky Shriyan (DJ)</p>
+                            <p>Swadesi(Host) | Dhaval aka D’evil(Judge) | Shaikhspeare(Judge) | Enkore(Judge) | Vicky Shriyan(DJ)</p>
                         </div>
                     </div>
                 </div>
@@ -311,15 +324,15 @@
             <div class="news-info">
                 <div class="col-md-4 news-grids wow zoomIn animated" data-wow-delay=".5s">
                     <h4><span>Structure</span></h4>
-                    <a href="documents/StructureofRapWarsPrelims.pdf">Download</a>
+                    <a href="documents/StructureofRapWarsPrelims.pdf" target="_blank">Download</a>
                 </div>
                 <div class="col-md-4 news-grids wow zoomIn animated" data-wow-delay=".7s">
                     <h4><span>Brochure</span></h4>
-                    <a href="documents/documents-export-2016-05-16.zip">Download</a>
+                    <a href="documents/documents-export-2016-05-16.zip" target="_blank">Download</a>
                 </div>
                 <div class="col-md-4 news-grids wow zoomIn animated" data-wow-delay=".9s">
                     <h4>Past <span>Sponsors</span></h4>
-                    <a href="http://bits-oasis.org/sponsors/">View</a>
+                    <a href="http://bits-oasis.org/sponsors/" target="_blank">View</a>
                 </div>
                 <div class="clearfix"> </div>
             </div>
@@ -389,31 +402,17 @@
         <div class="footer">
             <div class="container">
                 <div class="icons wow fadeInUp animated" data-wow-delay=".5s">
-                    <ul class="share-buttons">
-                        <li>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.bits-oasis.org/rapwars" title="Share on Facebook" target="_blank"><img class="social-icon" src="images/flat_web_icon_set/inverted/Facebook.png"></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/intent/tweet?source=http://www.bits-oasis.org/rapwars&text=Rap%20Wars:%20http://www.bits-oasis.org/rapwars" target="_blank" title="Tweet"><img class="social-icon" src="images/flat_web_icon_set/inverted/Twitter.png"></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/share?url=http://www.bits-oasis.org/rapwars" target="_blank" title="Share on Google+"><img class="social-icon" src="images/flat_web_icon_set/inverted/Google+.png"></a>
-                        </li>
-                    </ul>
-                    <!-- <ul>
+                    <ul>
                         <li>
                             <a href="https://www.facebook.com/oasis.bitspilani/" data-toggle="tooltip" data-placement="top" title="Facebook"><img src="images/i1.png" alt="" /></a>
                         </li>
-                        <li>
+                        <li class="footer-icons">
                             <a href="https://www.youtube.com/channel/UCf40GISJivaYZK2pPOyt1kw" data-toggle="tooltip" data-placement="top" title="Youtube"><img src="images/4.png" alt="" /> </a>
                         </li>
-                        <li>
-                            <a href="mailto:rapwars@bits-oasis.org" data-toggle="tooltip" data-placement="top" title="Gmail"><img src="images/gmail.png" alt="" /></a>
-                        </li>
-                        <li>
+                        <li class="footer-icons">
                             <a href="http://bits-oasis.org/rapwars/" data-toggle="tooltip" data-placement="top" title="Web"><img src="images/web.png" alt="" /> </a>
                         </li>
-                    </ul> -->
+                    </ul>
                     <script>
                     $(function() {
                         $('[data-toggle="tooltip"]').tooltip()

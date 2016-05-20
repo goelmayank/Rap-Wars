@@ -1,10 +1,30 @@
+.share-buttons li {
+    display: inline;
+}
+
 ul.share-buttons {
     list-style: none;
     padding: 0;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+
+@font-face {
+    font-family: 'Capture It';
+    src: url(../fonts/Capture.ttf) format('truetype');
+}
+
+#RapWars {
+    font-family: 'Capture It';
 }
 
 .social-icon {
     width: 30px;
     margin: 4px;
     height: 30px;
+}
+.footer-icons img{
+	width: 32px;
+	height: 32px;
 }
